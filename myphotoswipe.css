@@ -10,7 +10,7 @@ span.gallery {
 }
 
 li {
-	display: inline-block;
+	display: inline;
 }
 ul {
 	display: inline;

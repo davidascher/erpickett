@@ -49,8 +49,8 @@
 					}
 
 				},
-				for (var gallery in galleries) {
-					PhotoSwipe.attach( gallery.querySelectorAll('a'), options );
+				for (var i = 0; i < galleries.childNodes.length; i++) {
+					PhotoSwipe.attach( galleries[i].querySelectorAll('a'), options );
 				}
 // 				PhotoSwipe.attach( window.document.querySelectorAll('#anemones a'), options ),
 // 				PhotoSwipe.attach( window.document.querySelectorAll('#horseshoe a'), options ),

@@ -20,7 +20,6 @@
 				var galleries = window.document.querySelectorAll(".gallery");
 				var galleryNames = [];
 
-
 				var options = {
 					getImageCaption: function(el){
 						
@@ -47,12 +46,13 @@
 						// Alternatively you can just pass back a string. However, any HTML 
 						// markup will be escaped
 					}
-
-				},
+				};
 				for (var i = 0; i < galleries.childNodes.length; i++) {
 					PhotoSwipe.attach( galleries[i].querySelectorAll('a'), options );
 				}
-// 				PhotoSwipe.attach( window.document.querySelectorAll('#anemones a'), options ),
+// 				
+
+				// PhotoSwipe.attach( window.document.querySelectorAll('#anemones a'), options ),
 // 				PhotoSwipe.attach( window.document.querySelectorAll('#horseshoe a'), options ),
 // 				lemon_tree
 // 				go

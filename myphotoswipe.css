@@ -1,5 +1,5 @@
 /* my mods to photoswype.css */
 
-class nonpick { 
+.nonpick { 
 	display: none;
 }

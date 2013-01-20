@@ -5,7 +5,7 @@
 }
 
 div.gallery {
-	display: inline-table;
+	display: inline;
 }
 
 li {

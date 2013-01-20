@@ -17,6 +17,10 @@
 	<script type="text/javascript">
 		(function(window, PhotoSwipe){
 			document.addEventListener('DOMContentLoaded', function(){
+				var galleries = window.document.querySelectorAll(".gallery");
+				var galleryNames = [];
+
+
 				var options = {
 					getImageCaption: function(el){
 						
@@ -45,11 +49,28 @@
 					}
 
 				},
-				PhotoSwipe.attach( window.document.querySelectorAll('#anemones a'), options ),
-				PhotoSwipe.attach( window.document.querySelectorAll('#horseshoe a'), options ),
-				lemon_tree
-				go
-
+				for (var gallery in galleries) {
+					PhotoSwipe.attach( gallery.querySelectorAll('a'), options );
+				}
+// 				PhotoSwipe.attach( window.document.querySelectorAll('#anemones a'), options ),
+// 				PhotoSwipe.attach( window.document.querySelectorAll('#horseshoe a'), options ),
+// 				lemon_tree
+// 				go
+// 				exuberance
+// 				mushrooms
+// 				tidepool
+// 				chestnuts
+// 				dancing_guy
+// 				endgame
+// wires_and_shells
+// wind_quilt
+// tubes
+// space_oddyssey
+// sea_moth
+// reformation
+// eruption
+// northampton
+// pasta_fagiole
 			}, false);
 			
 		}(window, window.Code.PhotoSwipe));
@@ -96,7 +117,9 @@
 		<li class="nonpick"><a href="images/medium/exuberance_4.jpg"><img src="images/thumb/exuberance_4.jpg" alt="exuberance_4.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/exuberance_5.jpg"><img src="images/thumb/exuberance_5.jpg" alt="exuberance_5.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/exuberance_6.jpg"><img src="images/thumb/exuberance_6.jpg" alt="exuberance_6.jpg" /></a></li>
-		
+	</span>
+
+	<span id="mushrooms" class="gallery">
 		<li class="nonpick"><a href="images/medium/mushrooms_1.jpg"><img src="images/thumb/mushrooms_1.jpg" alt="mushrooms_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/mushrooms_2.jpg"><img src="images/thumb/mushrooms_2.jpg" alt="mushrooms_2.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/mushrooms_3.jpg"><img src="images/thumb/mushrooms_3.jpg" alt="mushrooms_3.jpg" /></a></li>
@@ -105,8 +128,10 @@
 		<li class="nonpick"><a href="images/medium/mushrooms_6.jpg"><img src="images/thumb/mushrooms_6.jpg" alt="mushrooms_6.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/mushrooms_7.jpg"><img src="images/thumb/mushrooms_7.jpg" alt="mushrooms_7.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/mushrooms_8.jpg"><img src="images/thumb/mushrooms_8.jpg" alt="mushrooms_8.jpg" /></a></li>
+	</span>
 
-		<li class="nonpick"><a href="images/medium/tide_pool_6.jpg"><img src="images/thumb/tide_pool_6.jpg" alt="tide_pool_6.jpg" /></a></li>
+	<span id="tidepool" class="gallery">
+		<li class="pick"><a href="images/medium/tide_pool_6.jpg"><img src="images/thumb/tide_pool_6.jpg" alt="tide_pool_6.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/tidepool_1.jpg"><img src="images/thumb/tidepool_1.jpg" alt="tidepool_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/tidepool_2.jpg"><img src="images/thumb/tidepool_2.jpg" alt="tidepool_2.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/tidepool_4.jpg"><img src="images/thumb/tidepool_4.jpg" alt="tidepool_4.jpg" /></a></li>
@@ -115,7 +140,7 @@
 
 	</span>
 
-	<span id="Gallery2" class="gallery">
+	<span id="chestnuts" class="gallery">
 		<li class="pick"><a href="images/medium/chestnuts_1.jpg"><img src="images/thumb/chestnuts_1.jpg" alt="chestnuts_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/chestnuts_2.jpg"><img src="images/thumb/chestnuts_2.jpg" alt="chestnuts_2.jpg" /></a></li>
 	</span>
@@ -123,48 +148,78 @@
 	
 	<h2>2011<h2>
 
-	<span id="Gallery3" class="gallery">
+	<span id="dancing_guy" class="gallery">
 
 		<li class="pick"><a href="images/medium/dancing_guy_1.jpg"><img src="images/thumb/dancing_guy_1.jpg" alt="dancing_guy_1.jpg" /></a></li>
 
-		<li class="nonpick"><a href="images/medium/endgame_1.jpg"><img src="images/thumb/endgame_1.jpg" alt="End Game -- chair, fabric, LEDs" /></a></li>
+	</span>
+
+	<span id="endgame" class="gallery">
+		<li class="pick"><a href="images/medium/endgame_1.jpg"><img src="images/thumb/endgame_1.jpg" alt="End Game -- chair, fabric, LEDs" /></a></li>
 		<li class="nonpick"><a href="images/medium/end_game_2.jpg"><img src="images/thumb/end_game_2.jpg" alt="end_game_2.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/end_game_4.jpg"><img src="images/thumb/end_game_4.jpg" alt="end_game_4.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/end_game_5.jpg"><img src="images/thumb/end_game_5.jpg" alt="end_game_5.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/end_game_8.jpg"><img src="images/thumb/end_game_8.jpg" alt="end_game_8.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/end_game_9.jpg"><img src="images/thumb/end_game_9.jpg" alt="end_game_9.jpg" /></a></li>
-		<li class="nonpick"><a href="images/medium/eruption_lit.jpg"><img src="images/thumb/eruption_lit.jpg" alt="eruption_lit.jpg" /></a></li>
+	</span>
+
+	<span id="eruption" class="gallery">
+		<li class="pick"><a href="images/medium/eruption_lit.jpg"><img src="images/thumb/eruption_lit.jpg" alt="eruption_lit.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/eruption_unlit.jpg"><img src="images/thumb/eruption_unlit.jpg" alt="eruption_unlit.jpg" /></a></li>
-		<li class="nonpick"><a href="images/medium/northampton_1.jpg"><img src="images/thumb/northampton_1.jpg" alt="northampton_1.jpg" /></a></li>
+	</span>
+
+	<span id="northampton" class="gallery">
+		<li class="pick"><a href="images/medium/northampton_1.jpg"><img src="images/thumb/northampton_1.jpg" alt="northampton_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/northampton_2.jpg"><img src="images/thumb/northampton_2.jpg" alt="northampton_2.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/northampton_3.jpg"><img src="images/thumb/northampton_3.jpg" alt="northampton_3.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/northampton_4.jpg"><img src="images/thumb/northampton_4.jpg" alt="northampton_4.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/northampton_5.jpg"><img src="images/thumb/northampton_5.jpg" alt="northampton_5.jpg" /></a></li>
-		<li class="nonpick"><a href="images/medium/pasta_fagiole_1.jpg"><img src="images/thumb/pasta_fagiole_1.jpg" alt="pasta_fagiole_1.jpg" /></a></li>
+	</span>
+
+	<span id="pasta_fagiole" class="gallery">
+		<li class="pick"><a href="images/medium/pasta_fagiole_1.jpg"><img src="images/thumb/pasta_fagiole_1.jpg" alt="pasta_fagiole_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/pasta_fagiole_2.jpg"><img src="images/thumb/pasta_fagiole_2.jpg" alt="pasta_fagiole_2.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/pasta_fagiole_3.jpg"><img src="images/thumb/pasta_fagiole_3.jpg" alt="pasta_fagiole_3.jpg" /></a></li>
-		<li class="nonpick"><a href="images/medium/reformation_1.jpg"><img src="images/thumb/reformation_1.jpg" alt="reformation_1.jpg" /></a></li>
+	</span>
+
+	<span id="reformation" class="gallery">
+		<li class="pick"><a href="images/medium/reformation_1.jpg"><img src="images/thumb/reformation_1.jpg" alt="reformation_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/reformation_2.jpg"><img src="images/thumb/reformation_2.jpg" alt="reformation_2.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/reformation_3.jpg"><img src="images/thumb/reformation_3.jpg" alt="reformation_3.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/reformation_4.jpg"><img src="images/thumb/reformation_4.jpg" alt="reformation_4.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/reformation_5.jpg"><img src="images/thumb/reformation_5.jpg" alt="reformation_5.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/reformation_6.jpg"><img src="images/thumb/reformation_6.jpg" alt="reformation_6.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/reformation_7.jpg"><img src="images/thumb/reformation_7.jpg" alt="reformation_7.jpg" /></a></li>
-		<li class="nonpick"><a href="images/medium/sea_moth_1.jpg"><img src="images/thumb/sea_moth_1.jpg" alt="sea_moth_1.jpg" /></a></li>
+	</span>
+
+	<span id="sea_moth" class="gallery">
+		<li class="pick"><a href="images/medium/sea_moth_1.jpg"><img src="images/thumb/sea_moth_1.jpg" alt="sea_moth_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/sea_moth_2.jpg"><img src="images/thumb/sea_moth_2.jpg" alt="sea_moth_2.jpg" /></a></li>
-		<li class="nonpick"><a href="images/medium/space_oddyssey_1.jpg"><img src="images/thumb/space_oddyssey_1.jpg" alt="space_oddyssey_1.jpg" /></a></li>
+	</span>
+
+	<span id="space_oddyssey" class="gallery">
+		<li class="pick"><a href="images/medium/space_oddyssey_1.jpg"><img src="images/thumb/space_oddyssey_1.jpg" alt="space_oddyssey_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/space_oddyssey_2.jpg"><img src="images/thumb/space_oddyssey_2.jpg" alt="space_oddyssey_2.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/space_oddyssey_4.jpg"><img src="images/thumb/space_oddyssey_4.jpg" alt="space_oddyssey_4.jpg" /></a></li>
-		<li class="nonpick"><a href="images/medium/tubes_1.jpg"><img src="images/thumb/tubes_1.jpg" alt="tubes_1.jpg" /></a></li>
+	</span>
+
+	<span id="tubes" class="gallery">
+		<li class="pick"><a href="images/medium/tubes_1.jpg"><img src="images/thumb/tubes_1.jpg" alt="tubes_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/tubes_2.jpg"><img src="images/thumb/tubes_2.jpg" alt="tubes_2.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/tubes_3.jpg"><img src="images/thumb/tubes_3.jpg" alt="tubes_3.jpg" /></a></li>
-		<li class="nonpick"><a href="images/medium/wind_quilt_1.jpg"><img src="images/thumb/wind_quilt_1.jpg" alt="wind_quilt_1.jpg" /></a></li>
+	</span>
+
+	<span id="wind_quilt" class="gallery">
+		<li class="pick"><a href="images/medium/wind_quilt_1.jpg"><img src="images/thumb/wind_quilt_1.jpg" alt="wind_quilt_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/wind_quilt_2.jpg"><img src="images/thumb/wind_quilt_2.jpg" alt="wind_quilt_2.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/wind_quilt_3.jpg"><img src="images/thumb/wind_quilt_3.jpg" alt="wind_quilt_3.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/wind_quilt_4.jpg"><img src="images/thumb/wind_quilt_4.jpg" alt="wind_quilt_4.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/wind_quilt_5.jpg"><img src="images/thumb/wind_quilt_5.jpg" alt="wind_quilt_5.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/wind_quilt_6.jpg"><img src="images/thumb/wind_quilt_6.jpg" alt="wind_quilt_6.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/wind_quilt_7.jpg"><img src="images/thumb/wind_quilt_7.jpg" alt="wind_quilt_7.jpg" /></a></li>
+	</span>
+
+	<span id="wires_and_shells" class="gallery">
 		<li class="nonpick"><a href="images/medium/wires_and_shells_1.jpg"><img src="images/thumb/wires_and_shells_1.jpg" alt="wires_and_shells_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/wood_lamp_1.jpg"><img src="images/thumb/wood_lamp_1.jpg" alt="wood_lamp_1.jpg" /></a></li>
 	</span>

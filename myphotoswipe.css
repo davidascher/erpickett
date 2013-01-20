@@ -16,5 +16,5 @@ ul {
 	display: inline;
 }
 
-.gallery li.pick img {
+.gallery li.pick {
 	width: auto;

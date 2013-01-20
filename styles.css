@@ -1,21 +1,4 @@
-.nonpick { 
-	display: none;
-}
 
-span.gallery {
-	display: inline-block;
-
-}
-
-li {
-	display: inline;
-}
-ul {
-	display: inline;
-}
-
-.gallery li.pick {
-	width: auto;
 
 body { padding: 0; margin: 0; background: #000; font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif; color: #444340; }
 h1 { font-size: 1.3em; padding: 15px 10px; margin: 0; }
@@ -42,3 +25,23 @@ a { color: #444340; }
 #Indicators { text-align: center; margin-top: 20px; }
 #Indicators span { display: inline-block; height: 10px; width: 10px; margin: 0 10px 0 0; padding: 0; -webkit-border-radius:5px; -moz-border-radius:5px; -o-border-radius:5px; border-radius:5px; background: #c5c5c5; overflow:hidden; }
 #Indicators span.current{ background: #EEBF02; }
+
+.nonpick { 
+	display: none;
+}
+
+span.gallery {
+	display: inline-block;
+
+}
+
+li {
+	display: inline;
+}
+ul {
+	display: inline;
+}
+
+.gallery li.pick {
+	width: auto;
+}

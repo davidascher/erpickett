@@ -6,10 +6,11 @@
 
 div.gallery {
 	display: inline;
+
 }
 
 li {
-	display: inline;
+	display: inline-block;
 }
 ul {
 	display: inline;

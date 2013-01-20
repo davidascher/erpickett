@@ -1,7 +1,7 @@
 /* my mods to photoswype.css */
 
 body {
-	background: black;
+	background: black !important;
 	color: white;
 }
 

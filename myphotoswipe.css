@@ -3,3 +3,7 @@
 .nonpick { 
 	display: none;
 }
+
+.gallery {
+	display: inline;
+}

@@ -15,3 +15,6 @@ li {
 ul {
 	display: inline;
 }
+
+.gallery li img {
+	width: auto;

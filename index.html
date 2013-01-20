@@ -20,7 +20,35 @@
 			document.addEventListener('DOMContentLoaded', function(){
 			
 				var
-					options = {},
+					options = {
+					
+						getImageCaption: function(el){
+							
+							var captionText, captionEl;
+							
+							// Get the caption from the alt tag
+							if (el.nodeName === "IMG"){
+								captionText = el.getAttribute('alt'); 
+							}
+							var i, j, childEl;
+							for (i=0, j=el.childNodes.length; i<j; i++){
+								childEl = el.childNodes[i];
+								if (el.childNodes[i].nodeName === 'IMG'){
+									captionText = childEl.getAttribute('alt'); 
+								}
+							}
+							
+							// Return a DOM element with custom styling
+							captionEl = document.createElement('div');
+							captionEl.style.cssText = 'background: red; font-weight: bold; padding: 5px;';
+							captionEl.appendChild(document.createTextNode(captionText));
+							return captionEl;
+							
+							// Alternatively you can just pass back a string. However, any HTML 
+							// markup will be escaped
+							
+						}
+					
 					gallery1Instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery1 a'), options ),
 					gallery2Instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery2 a'), options );
 			

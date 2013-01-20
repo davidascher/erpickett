@@ -1,6 +1,6 @@
 /* my mods to photoswype.css */
 
-body#home {
+html body#home {
 	background: #000 !important;
 	color: white;
 }

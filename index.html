@@ -45,9 +45,11 @@
 					}
 
 				},
-				gallery1Instance = PhotoSwipe.attach( window.document.querySelectorAll('.gallery a'), options );
-				// gallery1Instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery3 a'), options ),
-				// gallery2Instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery2 a'), options );
+				PhotoSwipe.attach( window.document.querySelectorAll('#anemones a'), options ),
+				PhotoSwipe.attach( window.document.querySelectorAll('#horseshoe a'), options ),
+				lemon_tree
+				go
+
 			}, false);
 			
 		}(window, window.Code.PhotoSwipe));
@@ -64,22 +66,31 @@
 	</div>
 	
 	<h2>2012<h2>
-	<span id="Gallery1" class="gallery">
+	<span id="anemones" class="gallery">
 		<!-- First is the representative image -->
 		<li class="pick"><a href="images/medium/anemones_1.jpg"><img src="images/thumb/anemones_1.jpg" alt="For Kristina" /></a></li>
 		<li class="nonpick"><a href="images/medium/anemones_2.jpg"><img src="images/thumb/anemones_2.jpg" alt="anemones_2.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/anemones_3.jpg"><img src="images/thumb/anemones_3.jpg" alt="anemones_3.jpg" /></a></li>
+	</span>
 
-		<li class="nonpick"><a href="images/medium/horseshoe_crabs_1.jpg"><img src="images/thumb/horseshoe_crabs_1.jpg" alt="horseshoe_crabs_1.jpg" /></a></li>
+	<span id="horseshoe" class="gallery">
+		<li class="pick"><a href="images/medium/horseshoe_crabs_1.jpg"><img src="images/thumb/horseshoe_crabs_1.jpg" alt="horseshoe_crabs_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/horseshoe_crabs_2.jpg"><img src="images/thumb/horseshoe_crabs_2.jpg" alt="horseshoe_crabs_2.jpg" /></a></li>
-		<li class="nonpick"><a href="images/medium/lemon_tree_1.jpg"><img src="images/thumb/lemon_tree_1.jpg" alt="lemon_tree_1.jpg" /></a></li>
-		<li class="nonpick"><a href="images/medium/lemon_tree_2.jpg"><img src="images/thumb/lemon_tree_2.jpg" alt="lemon_tree_2.jpg" /></a></li>
+	</span>
 
+	<span id="lemon_tree" class="gallery">
+		<li class="pick"><a href="images/medium/lemon_tree_1.jpg"><img src="images/thumb/lemon_tree_1.jpg" alt="lemon_tree_1.jpg" /></a></li>
+		<li class="nonpick"><a href="images/medium/lemon_tree_2.jpg"><img src="images/thumb/lemon_tree_2.jpg" alt="lemon_tree_2.jpg" /></a></li>
+	</span>
+
+	<span id="go" class="gallery">
 		<li class="nonpick"><a href="images/medium/go_1.jpg"><img src="images/thumb/go_1.jpg" alt="go_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/go_2.jpg"><img src="images/thumb/go_2.jpg" alt="go_2.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/go_3.jpg"><img src="images/thumb/go_3.jpg" alt="go_3.jpg" /></a></li>
+	</span>
 
-		<li class="nonpick"><a href="images/medium/exuberance_1.jpg"><img src="images/thumb/exuberance_1.jpg" alt="exuberance_1.jpg" /></a></li>
+	<span id="exuberance" class="gallery">
+		<li class="pick"><a href="images/medium/exuberance_1.jpg"><img src="images/thumb/exuberance_1.jpg" alt="exuberance_1.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/exuberance_2.jpg"><img src="images/thumb/exuberance_2.jpg" alt="exuberance_2.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/exuberance_3.jpg"><img src="images/thumb/exuberance_3.jpg" alt="exuberance_3.jpg" /></a></li>
 		<li class="nonpick"><a href="images/medium/exuberance_4.jpg"><img src="images/thumb/exuberance_4.jpg" alt="exuberance_4.jpg" /></a></li>

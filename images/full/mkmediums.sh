@@ -1,2 +1,2 @@
-for f in *.jpg; do gm convert -size 256x256 $f -resize 256x256 ../thumb/$f; done
+for f in *.jpg; do gm convert -size 800x800 $f -resize 800x800 ../medium/$f; done
 

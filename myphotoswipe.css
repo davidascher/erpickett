@@ -1,25 +1,2 @@
 /* my mods to photoswype.css */
 
-html body#home {
-	background: #000 !important;
-	color: white;
-}
-
-.nonpick { 
-	display: none;
-}
-
-span.gallery {
-	display: inline-block;
-
-}
-
-li {
-	display: inline;
-}
-ul {
-	display: inline;
-}
-
-.gallery li.pick {
-	width: auto;

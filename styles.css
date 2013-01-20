@@ -8,16 +8,11 @@ a { color: #444340; }
 
 #MainContent { background: #000; padding-bottom: 30px; }
 
-#SocialLinks { padding: 10px 0 0 0; }
-#SocialLinks:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
-#SocialLinks a { display: block; float: left; padding-right: 15px; }
-
 .gallery { list-style: none; padding: 0; margin: 0; }
 .gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
 .gallery li { float: left; width: 33.33333333%; }
 .gallery li a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
 .gallery li img { display: block; width: 100%; height: auto; }
-
 
 /* For inline examples only */
 #PhotoSwipeTarget { width: 100%; height: 200px; }
